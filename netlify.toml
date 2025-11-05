@@ -1,0 +1,8 @@
+[build]
+  publish = "dist/myPortfolio"
+  command = "ng build"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
