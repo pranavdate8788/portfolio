@@ -3,6 +3,25 @@ import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { AnimationService } from '../services/animation.service';
 
+interface Project {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+  category: string;
+  featured: boolean;
+  type: string;
+  status: string;
+  statusClass: string;
+  client: string;
+  gradientBg: string;
+  features: string[];
+  technologies: string[];
+  stats?: { label: string; value: string }[];
+  liveUrl?: string;
+  githubUrl?: string;
+}
+
 @Component({
   selector: 'app-projects',
   standalone: true,

@@ -292,8 +292,8 @@ import { AnimationService } from '../services/animation.service';
       </p>
       
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="mailto:nayneshrathod@gmail.com" 
-           class="bg-white text-indigo-600 px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:shadow-xl hover:scale-105 inline-flex items-center">
+      <a href="mailto:pranavdate908@gmail.com" 
+        class="bg-white text-indigo-600 px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:shadow-xl hover:scale-105 inline-flex items-center">
           <svg class="mr-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
           </svg>
@@ -408,7 +408,7 @@ export class ContactComponent implements OnInit {
         icon: "✉️",
         gradient: "from-blue-500 to-blue-700",
         action: "Send Email",
-        link: "mailto:nayneshrathod@gmail.com",
+        link: "mailto:pranavdate908@gmail.com",
         external: false
       },
       {
@@ -418,7 +418,7 @@ export class ContactComponent implements OnInit {
         icon: "📞",
         gradient: "from-green-500 to-green-700",
         action: "Call Now",
-        link: "tel:+918550949497",
+        link: "tel:+918788046270",
         external: false
       },
       {
@@ -428,7 +428,7 @@ export class ContactComponent implements OnInit {
         icon: "💬",
         gradient: "from-green-400 to-green-600",
         action: "Chat Now",
-        link: "https://wa.me/918550949497",
+        link: "https://wa.me/918788046270",
         external: true
       },
       {
@@ -438,7 +438,7 @@ export class ContactComponent implements OnInit {
         icon: "💼",
         gradient: "from-blue-600 to-blue-800",
         action: "Connect",
-        link: "https://linkedin.com/in/naynesh-rathod",
+        link: "https://linkedin.com/in/pranav-date-9b4846206",
         external: true
       }
     ];
@@ -449,14 +449,14 @@ export class ContactComponent implements OnInit {
       {
         id: 1,
         title: "Email",
-        value: "nayneshrathod@gmail.com",
+        value: "pranavdate908@gmail.com",
         icon: "✉️",
         gradient: "from-blue-500 to-blue-700"
       },
       {
         id: 2,
         title: "Phone",
-        value: "+91 8550949497",
+        value: "+91 8788046270",
         icon: "📞",
         gradient: "from-green-500 to-green-700"
       },
@@ -475,28 +475,28 @@ export class ContactComponent implements OnInit {
       {
         id: 1,
         name: "LinkedIn",
-        url: "https://linkedin.com/in/naynesh-rathod",
+        url: "https://linkedin.com/in/pranav-date-9b4846206",
         icon: "💼",
         gradient: "from-blue-600 to-blue-800"
       },
       {
         id: 2,
         name: "GitHub",
-        url: "https://github.com/naynesh-rathod",
+        url: "https://github.com/pranavdate8788",
         icon: "💻",
         gradient: "from-gray-700 to-gray-900"
       },
       {
         id: 3,
         name: "Twitter",
-        url: "https://twitter.com/naynesh_rathod",
+        url: "https://twitter.com/pranavdate8788",
         icon: "🐦",
         gradient: "from-blue-400 to-blue-600"
       },
       {
         id: 4,
         name: "Instagram",
-        url: "https://instagram.com/naynesh.rathod",
+        url: "https://instagram.com/pranavdate8788",
         icon: "📷",
         gradient: "from-pink-500 to-purple-600"
       }

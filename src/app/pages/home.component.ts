@@ -23,7 +23,7 @@ import { AnimationService } from '../services/animation.service';
           <div class="absolute inset-0 bg-gradient-to-r from-primary-500 to-purple-600 rounded-full animate-spin-slow opacity-75"></div>
           <div class="absolute inset-2 bg-white dark:bg-secondary-800 rounded-full overflow-hidden">
             <img src="/assets/resume/Profile.jpeg" 
-                 alt="Naynesh Rathod" 
+                 alt="Pranav Date" 
                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                  onerror="this.src='/assets/images/default-profile.svg'">
           </div>
@@ -32,7 +32,7 @@ import { AnimationService } from '../services/animation.service';
       
       <!-- Name and Title -->
       <h1 class="hero-title text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6">
-        Hi, I'm <span class="bg-gradient-to-r from-primary-600 to-purple-600 bg-clip-text text-transparent">Naynesh</span>
+        Hi, I'm <span class="bg-gradient-to-r from-primary-600 to-purple-600 bg-clip-text text-transparent">Pranav</span>
       </h1>
       
       <div class="hero-subtitle mb-8">
@@ -252,7 +252,7 @@ import { AnimationService } from '../services/animation.service';
         Get In Touch
       </a>
       
-      <a href="/assets/resume/Naynesh-Rathod-Resume.pdf" target="_blank" 
+      <a href="/assets/resume/Pranav-Date-Resume.pdf" target="_blank" 
          class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:bg-white hover:text-primary-600 hover:scale-105 inline-flex items-center">
         <svg class="mr-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
@@ -269,10 +269,10 @@ export class HomeComponent implements OnInit {
   private animationService = inject(AnimationService);
   
   stats = signal({
-    experience: 4,
-    projects: 15,
-    clients: 10,
-    technologies: 20
+    experience: 1,
+    projects: 3,
+    clients: 5,
+    technologies: 15
   });
 
   constructor() {
@@ -363,17 +363,17 @@ export class HomeComponent implements OnInit {
       {
         category: 'Frontend',
         icon: '🎨',
-        technologies: ['Angular', 'Vue.js', 'TypeScript', 'JavaScript', 'Tailwind CSS']
+        technologies: ['Angular', 'AngularJS', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3']
       },
       {
-        category: 'Backend',
+        category: 'Backend & Tools',
         icon: '⚙️',
-        technologies: ['Node.js', 'Express.js', 'Python', 'Django', 'Java Spring Boot']
+        technologies: ['NodeJS', 'ExpressJS', 'Webpack', 'Gulp', 'NPM Scripts']
       },
       {
-        category: 'Database & Tools',
-        icon: '�️',
-        technologies: ['MongoDB', 'MySQL', 'PostgreSQL', 'Firebase', 'SQL Server']
+        category: 'Database & Concepts',
+        icon: '🗄️',
+        technologies: ['MongoDB', 'MySQL', 'MVC', 'MVVM', 'Component Architecture', 'Responsive Design']
       }
     ];
   }
@@ -382,30 +382,30 @@ export class HomeComponent implements OnInit {
     return [
       {
         id: 1,
-        title: 'E-Commerce Platform',
-        description: 'Full-stack e-commerce solution with modern UI/UX, payment integration, and admin dashboard.',
-        image: '/assets/images/projects/ecommerce-preview.jpg',
-        technologies: ['Angular', 'Node.js', 'MongoDB', 'Stripe'],
-        liveUrl: 'https://example-ecommerce.com',
-        githubUrl: 'https://github.com/naynesh/ecommerce-platform'
+        title: 'NAVYOJNA',
+        description: 'Indian Navy Dockyard Management System developed with Angular and TypeScript. Improved efficiency through API-based real-time data exchange.',
+        image: '/assets/images/projects/navyojna-preview.jpg',
+        technologies: ['Angular', 'TypeScript', 'Micro Frontend', 'Bootstrap'],
+        liveUrl: 'https://pranavdate8788.github.io/navyojna',
+        githubUrl: 'https://github.com/pranavdate8788/navyojna'
       },
       {
         id: 2,
-        title: 'Task Management App',
-        description: 'Collaborative task management application with real-time updates and team collaboration features.',
-        image: '/assets/images/projects/task-manager-preview.jpg',
-        technologies: ['React', 'Firebase', 'Tailwind CSS', 'Socket.io'],
-        liveUrl: 'https://example-taskmanager.com',
-        githubUrl: 'https://github.com/naynesh/task-manager'
+        title: 'Missile',
+        description: 'Comprehensive module development using PrimeNG components and Angular core concepts with dynamic forms and CRUD operations.',
+        image: '/assets/images/projects/missile-preview.jpg',
+        technologies: ['PrimeNG', 'Angular', 'HTML', 'Forms'],
+        liveUrl: 'https://pranavdate8788.github.io/missile',
+        githubUrl: 'https://github.com/pranavdate8788/missile'
       },
       {
         id: 3,
-        title: 'Portfolio Website',
-        description: 'Responsive portfolio website with smooth animations, dark mode, and optimized performance.',
-        image: '/assets/images/projects/portfolio-preview.jpg',
-        technologies: ['Angular', 'GSAP', 'Tailwind CSS', 'TypeScript'],
-        liveUrl: 'https://naynesh-rathod.com',
-        githubUrl: 'https://github.com/naynesh/portfolio'
+        title: 'MyTutor',
+        description: 'Full-stack one-to-one learning platform built with MERN stack, featuring real-time chat, secure authentication, and course management.',
+        image: '/assets/images/projects/mytutor-preview.jpg',
+        technologies: ['MongoDB', 'Express', 'React', 'NodeJS'],
+        liveUrl: 'https://pranavdate8788.github.io/mytutor',
+        githubUrl: 'https://github.com/pranavdate8788/mytutor'
       }
     ];
   }

@@ -118,7 +118,7 @@ import { AnimationService } from '../services/animation.service';
                 </div>
 
                 <!-- Projects -->
-                @if (experience.projects && experience.projects.length > 0) {
+                <!-- @if (experience.projects && experience.projects.length > 0) {
                   <div>
                     <h5 class="text-md font-semibold text-gray-900 dark:text-white mb-3 flex items-center">
                       <svg class="w-4 h-4 mr-2 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -134,7 +134,7 @@ import { AnimationService } from '../services/animation.service';
                       }
                     </div>
                   </div>
-                }
+                } -->
               </div>
             </div>
           </div>
@@ -287,72 +287,29 @@ export class ExperienceComponent implements OnInit {
   }
 
   getTotalExperience(): string {
-    return "4+";
+    return "1";
   }
 
   getExperiences() {
     return [
       {
         id: 1,
-        company: "Productiva Group",
+        company: "EPPS Infotech Pvt. Ltd.",
         location: "Pune, India",
-        position: "Angular Developer",
-        duration: "Feb 2023 - Present",
-        description: "Leading frontend development initiatives using Angular and modern web technologies. Focused on building scalable, responsive web applications with emphasis on performance optimization and user experience.",
-        companyInitials: "PG",
+        position: "UI Developer",
+        duration: "Apr 2024 - Present",
+        description: "Developing and maintaining responsive Angular-based applications with emphasis on scalability and performance.",
+        companyInitials: "EI",
         companyColor: "from-blue-500 to-blue-700",
         dotColor: "from-blue-500 to-blue-700",
         achievements: [
-          "Developed responsive web applications using Angular, TypeScript, and modern CSS frameworks",
-          "Implemented performance optimizations reducing page load times by 40%",
-          "Collaborated with cross-functional teams to deliver high-quality software solutions", 
-          "Mentored junior developers on Angular best practices and coding standards",
-          "Contributed to code reviews and maintained high code quality standards"
+          "Developed and maintained responsive Angular-based applications",
+          "Integrated REST APIs and handled data rendering between front-end and back-end",
+          "Worked on NAVYOJNA, a management system for Indian Navy Dockyard operations",
+          "Implemented NPM scripts for efficient build and deployment",
+          "Followed MVC/MVVM architecture and optimized UI components"
         ],
-        technologies: ["Angular", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind CSS", "Git", "REST APIs"],
-        projects: ["Enterprise Dashboard", "Customer Portal", "Admin Management System"]
-      },
-      {
-        id: 2,
-        company: "MindBowser",
-        location: "Pune, India", 
-        position: "Full Stack Developer",
-        duration: "Jul 2021 - Jan 2023",
-        description: "Full-stack development role working with MEAN stack technologies. Built end-to-end web applications including the Indian Navy's NavYojana ERP system and various client projects.",
-        companyInitials: "MB",
-        companyColor: "from-purple-500 to-purple-700",
-        dotColor: "from-purple-500 to-purple-700",
-        achievements: [
-          "Developed and deployed Indian Navy's NavYojana ERP system serving 1000+ users",
-          "Built full-stack applications using MEAN stack (MongoDB, Express.js, Angular, Node.js)",
-          "Implemented secure authentication and authorization systems",
-          "Designed and developed RESTful APIs with comprehensive error handling",
-          "Optimized database queries and improved application performance by 35%",
-          "Led client communication for project requirements and technical solutions"
-        ],
-        technologies: ["Angular", "Node.js", "MongoDB", "Express.js", "TypeScript", "JavaScript", "Bootstrap", "JWT", "REST APIs"],
-        projects: ["NavYojana ERP (Indian Navy)", "Courtyardly Artist Platform", "Client Management Systems"]
-      },
-      {
-        id: 3,
-        company: "Medicalwale",
-        location: "Remote",
-        position: "Frontend Developer", 
-        duration: "Jan 2021 - Jun 2021",
-        description: "Frontend development role focused on healthcare applications. Worked on building responsive, accessible web interfaces for medical professionals and patients.",
-        companyInitials: "MW",
-        companyColor: "from-green-500 to-green-700",
-        dotColor: "from-green-500 to-green-700",
-        achievements: [
-          "Developed responsive healthcare web applications using Angular and Vue.js",
-          "Implemented accessibility features ensuring WCAG compliance",
-          "Built real-time chat functionality for patient-doctor communication",
-          "Integrated payment gateways for healthcare service bookings",
-          "Collaborated with UI/UX designers to create intuitive user interfaces",
-          "Implemented progressive web app (PWA) features for mobile optimization"
-        ],
-        technologies: ["Angular", "Vue.js", "JavaScript", "HTML5", "CSS3", "Bootstrap", "Socket.io", "Payment APIs"],
-        projects: ["Patient Portal", "Doctor Dashboard", "Appointment Booking System"]
+        technologies: ["Angular", "TypeScript", "Micro Frontend", "Bootstrap", "REST APIs", "NPM Scripts"]
       }
     ];
   }
@@ -361,27 +318,27 @@ export class ExperienceComponent implements OnInit {
     return [
       {
         id: 1,
-        title: "Frontend Development",
+        title: "Languages",
         icon: "💻",
         gradient: "from-blue-500 to-cyan-500",
-        description: "Building modern, responsive user interfaces with the latest frameworks and technologies",
-        skills: ["Angular", "Vue.js", "React", "TypeScript", "JavaScript", "HTML5/CSS3", "Tailwind CSS", "Bootstrap"]
+        description: "Core programming languages and markup technologies",
+        skills: ["JavaScript", "TypeScript", "HTML5", "CSS3"]
       },
       {
         id: 2,
-        title: "Backend Development",
+        title: "Frameworks & Tools",
         icon: "⚙️",
         gradient: "from-green-500 to-emerald-500", 
-        description: "Developing scalable server-side applications and RESTful APIs",
-        skills: ["Node.js", "Express.js", "Django", "MongoDB", "PostgreSQL", "MySQL", "REST APIs", "JWT Authentication"]
+        description: "Modern frameworks and development tools",
+        skills: ["Angular", "AngularJS", "NodeJS", "ExpressJS", "Webpack", "Gulp", "NPM Scripts"]
       },
       {
         id: 3,
-        title: "Project Management",
-        icon: "📊",
+        title: "Architecture & Databases",
+        icon: "🏗️",
         gradient: "from-purple-500 to-pink-500",
-        description: "Leading development teams and managing project lifecycles effectively",
-        skills: ["Agile/Scrum", "Team Leadership", "Client Communication", "Code Reviews", "Mentoring", "Documentation"]
+        description: "Development patterns and data management",
+        skills: ["MongoDB", "MySQL", "MVC", "MVVM", "Component Architecture", "Responsive Design"]
       }
     ];
   }
@@ -391,31 +348,31 @@ export class ExperienceComponent implements OnInit {
       {
         id: 1,
         icon: "💼",
-        value: 4,
-        suffix: "+",
-        label: "Years Experience",
+        value: 1,
+        suffix: "",
+        label: "Year Experience",
         description: "Professional development"
       },
       {
         id: 2,
         icon: "🏢",
-        value: 3,
+        value: 1,
         suffix: "",
-        label: "Companies",
-        description: "Different industries"
+        label: "Company",
+        description: "EPPS Infotech"
       },
       {
         id: 3,
         icon: "🚀",
-        value: 15,
-        suffix: "+",
+        value: 3,
+        suffix: "",
         label: "Projects",
         description: "Successfully delivered"
       },
       {
         id: 4,
         icon: "🛠️",
-        value: 20,
+        value: 15,
         suffix: "+",
         label: "Technologies",
         description: "Mastered & used"

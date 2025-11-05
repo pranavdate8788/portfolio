@@ -3,6 +3,45 @@ import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { AnimationService } from '../services/animation.service';
 
+interface PersonalInfo {
+  description: string;
+  email: string;
+  phone: string;
+  location: string;
+}
+
+interface Education {
+  id: number;
+  degree: string;
+  institution: string;
+  university: string;
+  duration: string;
+  percentage: string;
+  specialization: string;
+}
+
+interface Certification {
+  id: number;
+  title: string;
+  provider: string;
+  duration: string;
+}
+
+interface Interest {
+  id: number;
+  title: string;
+  icon: string;
+  description: string;
+}
+
+interface Statistic {
+  id: number;
+  value: number;
+  label: string;
+  description: string;
+  suffix: string;
+}
+
 @Component({
   selector: 'app-about',
   standalone: true,
@@ -21,13 +60,13 @@ import { AnimationService } from '../services/animation.service';
             <div class="relative group">
               <div class="w-32 h-32 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-1 animate-spin-slow">
                 <div class="w-full h-full rounded-full bg-white dark:bg-secondary-800 flex items-center justify-center">
-                  <span class="text-4xl font-bold text-primary-600 dark:text-white">NR</span>
+                  <span class="text-4xl font-bold text-primary-600 dark:text-white">PD</span>
                 </div>
               </div>
             </div>
             <div>
               <h1 class="hero-title text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-                About <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">Naynesh</span>
+                About <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">Pranav</span>
               </h1>
               <p class="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
                 {{personalInfo().description}}
@@ -265,10 +304,10 @@ export class AboutComponent implements OnInit {
   private animationService = inject(AnimationService);
   
   personalInfo = signal({
-    description: "Front-End Developer with 4+ years of experience in Angular, TypeScript, JavaScript, and modern web technologies. Proven track record in building scalable, responsive web applications and ERP systems including Indian Navy's NavYojana. Skilled in MEAN stack, REST API integration, and UI performance optimization. MCA graduate passionate about creating innovative digital solutions.",
-    email: "nayneshrathod@gmail.com",
-    phone: "+91 8550949497",
-    location: "Pune, India"
+    description: "Results-driven UI Developer with 10 months of experience in Angular currently working as a UI Trainee at EPPS Infotech Pvt. Ltd. Skilled in building dynamic and responsive web applications, with a keen eye for user experience and performance optimization. Passionate about front-end development, clean code, and continuous learning to enhance UI/UX design and functionality.",
+    email: "pranavdate908@gmail.com",
+    phone: "+91 8788046270",
+    location: "Pune, Maharashtra"
   });
 
   constructor() {
@@ -278,7 +317,7 @@ export class AboutComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    // Component initialization
+    this.initializeAnimations();
   }
 
   private initializeAnimations(): void {
@@ -386,57 +425,21 @@ export class AboutComponent implements OnInit {
     return [
       {
         id: 1,
-        title: "Python & Django Framework for Beginners",
-        provider: "Udemy",
-        duration: "2020 - 2021"
+        title: "JAVA Full stack",
+        provider: "Pentagon Space",
+        duration: "2023"
       },
       {
         id: 2,
-        title: "Python and Django Full-Stack Web Development",
-        provider: "Udemy",
-        duration: "2020 - 2021"
+        title: "MERN Full stack",
+        provider: "The Kiran Academy",
+        duration: "2023"
       },
       {
         id: 3,
-        title: "The Complete Angular Course: Zero to Hero",
-        provider: "Udemy",
-        duration: "2019"
-      },
-      {
-        id: 4,
-        title: "Angular - Basic to Professional",
-        provider: "Udemy",
-        duration: "2019"
-      },
-      {
-        id: 5,
-        title: "Node.js, Express, MongoDB Masterclass",
-        provider: "Udemy",
+        title: "Web Development",
+        provider: "Intershala",
         duration: "2023"
-      },
-      {
-        id: 6,
-        title: "JavaScript, Bootstrap, & PHP Certification",
-        provider: "Udemy",
-        duration: "2019"
-      },
-      {
-        id: 7,
-        title: "Angular 15 Crash Course",
-        provider: "Udemy",
-        duration: "2023"
-      },
-      {
-        id: 8,
-        title: "Responsive Web Development: 4 courses in 1",
-        provider: "Udemy",
-        duration: "2020"
-      },
-      {
-        id: 9,
-        title: "HTML5 Coding from Scratch",
-        provider: "Udemy",
-        duration: "2019"
       }
     ];
   }
@@ -474,31 +477,31 @@ export class AboutComponent implements OnInit {
     return [
       {
         id: 1,
-        value: 3,
-        label: "Years Experience",
-        description: "Professional development experience",
+        value: 10,
+        label: "Months Experience",
+        description: "Professional development",
         suffix: "+"
       },
       {
         id: 2,
-        value: 15,
-        label: "Projects Completed",
-        description: "Successful project deliveries",
-        suffix: "+"
+        value: 2,
+        label: "Major Projects",
+        description: "Successfully delivered",
+        suffix: ""
       },
       {
         id: 3,
-        value: 9,
-        label: "Certifications",
-        description: "Professional certifications earned",
+        value: 1,
+        label: "SIH Finalist",
+        description: "2022 Achievement",
         suffix: ""
       },
       {
         id: 4,
-        value: 100,
-        label: "Client Satisfaction",
-        description: "Happy clients & positive reviews",
-        suffix: "%"
+        value: 1,
+        label: "TATA Challenge",
+        description: "Competition Winner",
+        suffix: ""
       }
     ];
   }

@@ -13,7 +13,7 @@ export class App implements OnInit {
   private readonly themeService = inject(ThemeService);
   private readonly animationService = inject(AnimationService);
   
-  protected readonly title = signal('Naynesh Rathod');
+  protected readonly title = signal('Pranav Date');
   protected readonly subtitle = signal('Full Stack Developer & UI/UX Designer');
   protected readonly mobileMenuOpen = signal(false);
   protected readonly currentTheme = this.themeService.currentTheme;

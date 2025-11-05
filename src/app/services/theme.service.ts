@@ -10,7 +10,7 @@ export class ThemeService {
   private readonly platformId = inject(PLATFORM_ID);
   private readonly isBrowser = isPlatformBrowser(this.platformId);
   
-  private readonly THEME_KEY = 'naynesh-portfolio-theme';
+  private readonly THEME_KEY = 'pranav-portfolio-theme';
   
   // Signal for current theme
   readonly currentTheme = signal<Theme>('light');
